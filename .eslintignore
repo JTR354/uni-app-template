@@ -1,0 +1,4 @@
+build/*.js
+dist
+public
+node_modules
