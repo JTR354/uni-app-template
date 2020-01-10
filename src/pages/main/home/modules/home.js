@@ -1,15 +1,9 @@
 export const state = {
-  hello: 123
+  todo: true
 }
 
-export const getters = {
-  hello: (state) => state.hello
-}
+export const getters = {}
 
-export const mutations = {
-  addHello(state) {
-    state.hello++
-  }
-}
+export const mutations = {}
 
 export const actions = {}

@@ -72,8 +72,7 @@
     "vue-template-compiler": "^2.6.10",
     "webpack": "^4.41.5"
   },
-  "gitHooks": {
-  },
+  "gitHooks": {},
   "browserslist": [
     "Android >= 4",
     "ios >= 8"

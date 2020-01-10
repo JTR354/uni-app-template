@@ -1,6 +1,6 @@
 <template>
-  <div class="home">
-    home
+  <div class="user-info">
+    user-info
   </div>
 </template>
 
@@ -8,24 +8,27 @@
   // import * as Helpers from './modules/helpers'
   // import API from '@api'
 
-  const PAGE_NAME = 'HOME'
+  const PAGE_NAME = 'USER_INFO'
 
   export default {
     name: PAGE_NAME,
+    components: {
+    },
     data() {
       return {
       }
     },
     computed: {
-      // ...Helpers.homeComputed,
+      // ...Helpers.userInfoComputed,
     },
     methods: {
-      // ...Helpers.homeMethods,
+      // ...Helpers.userInfoMethods,
     }
   }
 </script>
+
 <style scoped lang="stylus" rel="stylesheet/stylus">
 
-  .home
+  .user-info
     min-height: 100vh
 </style>

@@ -1,95 +1,24 @@
 {
   "pages": [
     {
-      "path": "pages/main/official-home/official-home",
+     "path": "pages/main/home/home",
       "style": {
-        "navigationBarTitleText": "赞播"
+         "navigationBarTitleText": "home"
       }
-    },
-    {
-      "path": "pages/main/home/home",
-      "style": {
-        "navigationBarTitleText": "淘宝精选",
-        "enablePullDownRefresh": true
-      }
-    },
-    {
-      "path": "pages/main/official-product/official-product",
-      "style": {
-        "navigationBarTitleText": "产品中心"
-      }
-    },
-    {
-      "path": "pages/main/official-relation/official-relation",
-      "style": {
-        "navigationBarTitleText": "提交申请"
-      }
-    },
-    {
-      "path": "pages/main/official-scheme/official-scheme",
-      "style": {
-        "navigationBarTitleText": "解决方案"
-      }
-    },
-    {
-      "path": "pages/main/official-prodetail/official-prodetail",
-      "style": {
-        "navigationBarTitleText": " "
-      }
-    },
-    {
-      "path": "pages/main/pdd-list/pdd-list",
-      "style": {
-        "navigationBarTitleText": "拼多多精选",
-        "enablePullDownRefresh": true
-      }
-    },
-    {
-      "path": "pages/main/mine/mine",
-      "style": {
-        "navigationBarTitleText": "我的",
-        "navigationBarBackgroundColor": "#DB4537",
-        "navigationBarTextStyle": "white",
-        "usingComponents": {}
-      }
-    },
-    {
-      "path": "pages/main/goods-detail/goods-detail",
-      "style": {
-        "navigationBarTitleText": "商品详情"
-      }
-    },
+     },
     "__package-main__"
   ],
   "subPackages": [
     {
-      "root": "pages/package-users/",
+      "root": "pages/package-person/",
       "pages": [
         {
-          "path": "wxpay-apply/wxpay-apply",
+          "path": "user-info/user-info",
           "style": {
-            "navigationBarTitleText": "提现"
+            "navigationBarTitleText": "用户信息"
           }
         },
-        {
-          "path": "wxpay-bank/wxpay-bank",
-          "style": {
-            "navigationBarTitleText": "绑定银行卡"
-          }
-        },
-        {
-          "path": "wxpay-log/wxpay-log",
-          "style": {
-            "navigationBarTitleText": "提现记录"
-          }
-        },
-        {
-          "path": "missing/missing",
-           "style": {
-              "navigationBarTitleText": "404"
-           }
-        },
-        "__package-users__"
+        "__package-person__"
       ]
     }
   ],

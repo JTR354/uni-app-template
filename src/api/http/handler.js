@@ -3,14 +3,13 @@ import {baseURL, ERR_OK, TIME_OUT} from './config'
 import {showLoading, hideLoading, showToast} from '@utils/uni-app'
 import {$platform} from '@utils/constant'
 import storage from '@utils/storage'
-import _routes from '@utils/routes'
+// import _routes from '@utils/routes'
 const ERR_KEY = 'error_code'
 
 const COMMON_HEADER = {
   Authorization: storage('token'),
   'Mini-Program': $platform[process.env.VUE_APP_PLATFORM],
   // 'Release-Version': process.env.$V,
-  'App-key': '10b1578b68ca1df9f8d0046f3708bb4c'
 }
 
 HTTP.init((http) => {
@@ -64,13 +63,9 @@ HTTP.setCallback({
 function errorCodeHandle(code, url) {
   switch (code) {
     case 10000:
-      HTTP.setHeaders({Authorization: ''})
-      uni.clearStorageSync()
-      url !== '/customer/customer/auth/post-login' && uni.reLaunch({url: `${_routes.mainOfficialHome}`})
       break
     case 2010104: // 商品不存在或已下架
     case 3100105: // 店铺不存在或被冻结
-      uni.redirectTo({ url: _routes.usersMissing + '?code=' + code  })
       break
     default:
       break
